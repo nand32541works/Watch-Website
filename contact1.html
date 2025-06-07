@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchO.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="WatchO.com"></a>
+        <ul>
+          <li><a href="arrival.html">New Arrivals <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Shop <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="luxury.html">Luxury</a></li>
+                <li><a href="smart.html">Smartwatches</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Collections <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="brands.html">Country Brands</a></li>
+                <li><a href="classic.html">Classic</a></li>
+                <li><a href="modern.html">Modern</a></li>
+                <li><a href="limited.html">Limited Edition</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Support <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about1.html">About Us</a></li>
+                <li><a href="service1.html">Services</a></li>
+                <li><a href="contact1.html">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">Wishlist <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out for any inquiries, orders or feedback.</p>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Our Address</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Falguni Appartment, Barrackpore, Kolkata, India</p>
+          <p><i class="fas fa-phone"></i> +91-8100402401</p>
+          <p><i class="fas fa-envelope"></i> nandakishorejana780@gmail.com</p>
+          <br>
+          <h3>Our Address</h3>
+          <p><i class="fas fa-map-marker-alt"></i> KL University, Vaddheswaram, Andhra Pradesh, India</p>
+          <p><i class="fas fa-phone"></i> +91-78100XXXXX</p>
+          <p><i class="fas fa-envelope"></i> support@watcho.com</p>
+          <br>
+          <h3>Our Address</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Sapphire Chambers, Banner Road, Pune, India</p>
+          <p><i class="fas fa-phone"></i> +91-62831XXXXX</p>
+          <p><i class="fas fa-envelope"></i> nandakishorejana624@gmail.com</p>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="inline-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt="WatchO.com"></a>
+          <br><br>
+          <p>Crafting watches that embody sophistication and reliability. Join our family of timeless elegance.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Services</h3>
+          <div class="links">
+            <a href="#">Watch Repair</a>
+            <a href="#">Customization</a>
+            <a href="#">Gift Wrapping</a>
+            <a href="#">Engraving</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="#">Terms & Policies</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p style="color: #FF5C4D;">Falguni Appartment, Barrackpore, Kolkata<br>India</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>

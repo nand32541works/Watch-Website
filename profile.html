@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchO.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="WatchO.com"></a>
+        <ul>
+          <li><a href="arrival.html">New Arrivals <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Shop <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="luxury.html">Luxury</a></li>
+                <li><a href="smart.html">Smartwatches</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Collections <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="brands.html">Country Brands</a></li>
+                <li><a href="classic.html">Classic</a></li>
+                <li><a href="modern.html">Modern</a></li>
+                <li><a href="limited.html">Limited Edition</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Support <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about1.html">About Us</a></li>
+                <li><a href="service1.html">Services</a></li>
+                <li><a href="contact1.html">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">Wishlist <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h1 class="headinng">Profile User and Dashboard</h1>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="Profile.jpg" alt="Profile Picture" class="user-photo">
+            </div>
+            <center><h2 id="username">Nanda Kishore Jana</h2></center>
+            <p id="user-email"><b>Email-1: </b>nandakishorejana780@gmail.com</p>
+            <p id="user-email2"><b>Email-2: </b>nandakishorejana624@gmail.com</p>
+            <p id="user-phone"><b>Phone No.: </b>+91-8100402401</p>
+            <p id="user-address" style="text-align: left;"><b>Address: </b>Falguni Appartment,Barrackpore,Barasat Road,Nonachandanpukur,PIN-700122</p>
+            <center>
+                <div class="profile-actions">
+                    <a href="editprofile.html" class="inline-btn">Edit Profile</a>
+                    <a href="login.html"><button onclick="signOut()" class="inline-btn">Sign Out</button></a>
+                </div>
+            </center>
+        </div>
+    </div>
+  </section>
+  <section class="rating-section">
+    <h2>Rate Our Website</h2>
+    <p class="rater">Your feedback helps us improve our services!</p>
+    <div class="stars">
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+    </div>
+    <p id="rating-text"></p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt="WatchO.com"></a>
+          <br><br>
+          <p>Crafting watches that embody sophistication and reliability. Join our family of timeless elegance.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Services</h3>
+          <div class="links">
+            <a href="#">Watch Repair</a>
+            <a href="#">Customization</a>
+            <a href="#">Gift Wrapping</a>
+            <a href="#">Engraving</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="#">Terms & Policies</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p style="color: #FF5C4D;">Falguni Appartment, Barrackpore, Kolkata<br>India</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>
